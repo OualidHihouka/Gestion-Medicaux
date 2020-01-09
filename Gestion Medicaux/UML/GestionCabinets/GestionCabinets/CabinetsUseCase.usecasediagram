@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="2ba56d21-e4f5-4516-ab1f-97e277fd6ea1" name="CabinetsUseCase" linkedPackageId="e9b6d1b0-0d6f-42b3-99c1-5bc8f715a546" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="d27f2bae-9990-433d-806c-08de8ab774d4">
+      <elementDefinition Id="abced263-6690-4fa0-8e81-de2bc55bae3d" />
+      <body>Gestion Centres Medicaux</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="0a0da523-c364-4d59-9fb4-0f01113c7a81">
+      <profileInstance Id="345aae28-3393-414c-ad90-dfb37744313e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b7ec9ede-4849-4ba5-94ac-5dadb0c17099">
+      <profileInstance Id="1a3c08a6-23e5-4385-9c69-5cf77398237e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dfd9ab9d-7dca-452d-8642-e98faf3f11b0" name="Rechercher les Centres Médicaux" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d191b815-7b19-445f-9d5a-48008e3d8ee0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="861d6287-0dd5-4f8b-9b29-7ed779a75321" name="Utilisateur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="efbb395e-d98f-4190-a6c4-04530eda2c67" />
+        <targetEnds>
+          <association Id="2fdaba42-e062-491a-affe-91ebef929ca9" isDerived="false" sourceEndRoleName="Utilisateur" targetEndRoleName="Rechercher les Centres Médicaux" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dfd9ab9d-7dca-452d-8642-e98faf3f11b0" LastKnownName="Rechercher les Centres Médicaux" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1729a5b-6dbe-45d2-8caf-2522c5a511f6" name="Utilisateur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b6b1a2c7-152a-4968-a373-161f494a1871" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b604e9a6-e2f0-4fc9-8a39-d5f3df2b4982" name="Rechercher les Centres Médicaux" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="30ee6fcb-c42a-4126-b76b-d3533ce5a6ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="955eb4c1-036f-4700-8752-875d40634eb9" />
+          </association>
+          <association Id="12650dbd-aa47-41aa-9b9a-0bdd49eed9fa" isDerived="false" sourceEndRoleName="Utilisateur" targetEndRoleName="Visualiser les Article du Blog" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e9775a72-7de0-4fe6-a721-a637489e01d6" LastKnownName="Visualiser les Article du Blog" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95237548-d4b1-4a29-b537-de2888961ee8" name="Utilisateur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1333aa5a-4bb1-4702-9932-f31b143e1c73" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0cdb1be0-11d3-4f79-ad6e-9a7170e7cdbc" name="Visualiser les Article du Blog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2622904-00e2-4559-8fad-1320bf2943a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="91a4e8f5-b628-40e4-9897-15e4444aab58" />
+          </association>
+          <association Id="1fb7792d-494e-4c1f-a4e6-97356bb53b06" isDerived="false" sourceEndRoleName="Utilisateur" targetEndRoleName="Création d'un compte" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c3d80dc1-acda-4fa4-b35c-89317ebbbdc2" LastKnownName="Création d'un compte" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="982287e9-94a5-4a1d-9a12-6df814703068" name="Utilisateur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="befb9c06-1a36-4eb5-8c21-aca77c1ea5ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61079a5e-6c93-49c5-8ed7-a3619e3fe450" name="Création d'un compte" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e479519f-1688-4ad1-b1cb-886e28253dea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae38620a-3839-4e56-8245-954849e53abb" />
+          </association>
+          <association Id="989baaa0-fc0b-4b2c-86f4-0fef450bf435" isDerived="false" sourceEndRoleName="Utilisateur" targetEndRoleName="Connection au compte" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1330bb75-93c6-4b0e-bea7-eeea2052b715" LastKnownName="Connection au compte" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2114d60c-baba-45da-a703-f20ff54e2c8e" name="Utilisateur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c0c280c2-8a94-4b8f-b98e-afff38a08e5a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a56b6110-46db-499c-9f1e-a2176c19861b" name="Connection au compte" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab034038-6c60-4218-90c0-2e08562136e0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fc107981-f63c-4010-8060-dc1e05991859" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="de384957-f391-4053-aa90-307e729060ba" name="Patient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="58377856-8763-40dc-919e-e6d041d32ae4" />
+        <generalsInternal>
+          <generalization Id="fb338134-f3e1-41eb-b353-4c2ef830340a" isSubstitutable="false">
+            <actorMoniker Id="861d6287-0dd5-4f8b-9b29-7ed779a75321" LastKnownName="Utilisateur" />
+            <elementDefinition Id="ce93cd20-58da-48b4-b5dc-01f95cc13cb9" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="357dbdab-ae23-41e7-83e9-4900f1896afb" isDerived="false" sourceEndRoleName="Patient" targetEndRoleName="Editer Rendez-vous" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="66cb9d94-79e2-466a-99bc-a8a8bd710729" LastKnownName="Editer Rendez-vous" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e703d67-22d7-45c5-8d84-617b12a4f4ff" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f73e4489-cdee-4c81-97c8-0b14f1660e9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c57c4a8-c326-4b1a-b18a-7935c80e81fd" name="Editer Rendez-vous" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="747f4d88-ad92-40f1-a8d1-36ead6787c92" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab5216ec-1181-49ee-85a0-68d547b30c0b" />
+          </association>
+          <association Id="9f04a1e8-4e1b-4531-8b3a-702631e2da6f" isDerived="false" sourceEndRoleName="Patient" targetEndRoleName="Editer un Message" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="199ef035-2311-433a-8765-e32bfdeae0e7" LastKnownName="Editer un Message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30d7e3f7-5e53-41b2-a4b4-ae2a609d3f65" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16f3ad51-852f-474d-a865-5a498625e505" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c36c537-3cf5-4ad1-8a6c-16d317c7ce14" name="Editer un Message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e55c945d-418d-4669-bdfd-f8b62ab4500e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e6a527ac-3167-4634-99dc-53e2c4e77bc9" />
+          </association>
+          <association Id="d313bdde-35e1-4c30-90a3-80a35ebdc99b" isDerived="false" sourceEndRoleName="Patient" targetEndRoleName="Intereagir dans le Blog" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="23ec6207-b91b-4ce0-bdfc-f3c5f9a2d73a" LastKnownName="Intereagir dans le Blog" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="21ff2325-674b-4ca8-8b16-7488b624d8f9" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e1f5282-77da-4d05-ac4e-fd3b5936b01b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e008c843-7264-4abc-bff7-e1676d969caf" name="Intereagir dans le Blog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d57edeb4-226b-40c1-9351-d615d6dffb5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b66e6f0a-3a6c-49ce-a4dd-b4d905b005f3" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1de4a51a-2b8c-4a02-a5e0-f2519caa9dc7" name="Medcin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4e091b8-fb79-41ae-80a8-8bacf10e429b" />
+        <generalsInternal>
+          <generalization Id="c1a72b34-cf3b-4c98-87ac-a71356fc25e9" isSubstitutable="false">
+            <actorMoniker Id="de384957-f391-4053-aa90-307e729060ba" LastKnownName="Patient" />
+            <elementDefinition Id="db8a34d7-6f2d-45ce-94c4-3b3937cba5bf" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="24bb6e47-790c-4bc4-ac9c-d452dd96b725" isDerived="false" sourceEndRoleName="Medcin" targetEndRoleName="Editer Centre Médical" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9b31aa71-851c-4fd6-9b9d-3efef3cd0f00" LastKnownName="Editer Centre Médical" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06f78e92-9f7e-4b90-aedb-f5a645f8a2ef" name="Medcin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a43ed81d-8ea0-43e4-bbe6-3584a5066aa4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="517bb798-d8ca-4873-9663-5db7093090a1" name="Editer Centre Médical" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c0e08e67-c4ab-4b03-9282-5acf9a95f1f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a9efd7b0-e517-406d-8b01-59d7fa388e84" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e9775a72-7de0-4fe6-a721-a637489e01d6" name="Visualiser les Article du Blog" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="576443c5-9b51-4514-9ff2-e092ec234c4c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c3d80dc1-acda-4fa4-b35c-89317ebbbdc2" name="Création d'un compte" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b6b72d4c-b283-410b-8f13-d67dd5d69816" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1330bb75-93c6-4b0e-bea7-eeea2052b715" name="Connection au compte" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f284394f-294b-4028-a0d4-639ec95e2fe9" />
+        <additions>
+          <include Id="c39efb8c-e263-486a-b053-4968cdae759a">
+            <useCaseMoniker Id="c3d80dc1-acda-4fa4-b35c-89317ebbbdc2" LastKnownName="Création d'un compte" />
+            <elementDefinition Id="41379b8d-97da-4119-82f8-d68b50b96b0c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="66cb9d94-79e2-466a-99bc-a8a8bd710729" name="Editer Rendez-vous" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16283103-ae14-4efb-a427-9bd7004a3bfb" />
+        <additions>
+          <include Id="b2d21f29-835d-4f5b-a0a8-30c37b4fff8b">
+            <useCaseMoniker Id="1330bb75-93c6-4b0e-bea7-eeea2052b715" LastKnownName="Connection au compte" />
+            <elementDefinition Id="d14a8e04-d94f-4994-87ae-d0bf69ddcccc" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="199ef035-2311-433a-8765-e32bfdeae0e7" name="Editer un Message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10d1ea4b-49fd-4f28-8fac-4057015ff92b" />
+        <additions>
+          <include Id="783277eb-6d8d-4290-b9d9-14559bfe5cf2">
+            <useCaseMoniker Id="1330bb75-93c6-4b0e-bea7-eeea2052b715" LastKnownName="Connection au compte" />
+            <elementDefinition Id="c848e84e-8b37-47cf-b64a-6d900c744fa8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9b31aa71-851c-4fd6-9b9d-3efef3cd0f00" name="Editer Centre Médical" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="62f6de1b-7fa5-4652-915f-58d55e88fcb5" />
+        <additions>
+          <include Id="e7785cd5-ee11-4799-808d-f003c356bb6b">
+            <useCaseMoniker Id="1330bb75-93c6-4b0e-bea7-eeea2052b715" LastKnownName="Connection au compte" />
+            <elementDefinition Id="c3b21fc8-096c-4b7e-9707-9041b351bd31" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="23ec6207-b91b-4ce0-bdfc-f3c5f9a2d73a" name="Intereagir dans le Blog" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="95b61208-8ed6-4325-9ac4-bbae29d59c9f" />
+        <additions>
+          <include Id="dcd44ae5-e365-46d2-9aa9-9a31545219f2">
+            <useCaseMoniker Id="1330bb75-93c6-4b0e-bea7-eeea2052b715" LastKnownName="Connection au compte" />
+            <elementDefinition Id="ee8a30af-ecbb-418d-a019-7fb342cc3a65" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e9b6d1b0-0d6f-42b3-99c1-5bc8f715a546" name="GestionCabinets">
+    <elementDefinition Id="b66019a5-1711-49f9-88d3-861ebf49a028" />
+  </package>
+</useCaseModelRoot>

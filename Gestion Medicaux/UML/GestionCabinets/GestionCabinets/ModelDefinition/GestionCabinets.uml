@@ -1,0 +1,2633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b66019a5-1711-49f9-88d3-861ebf49a028"
+  name="GestionCabinets" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="abced263-6690-4fa0-8e81-de2bc55bae3d">
+      <body>Gestion Centres Medicaux</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="96b8b68d-8b1e-4025-8269-1546ff2a7e08"
+        name="CentreMedical"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5be421dc-613b-46ca-b7f1-dc898809440c"
+            name="NumCab"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8240c927-547e-4ce1-aa07-4e2a9a69931a"
+            name="NomCab"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="61d23966-37aa-46c3-b690-0c0ea424ed66"
+            name="AdresseCab"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6fa21584-a45a-4d88-9b99-0e3b564ba060"
+            name="CINMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="72c629ab-4526-4805-8623-7cd3c8576749"
+            name="NumTelCab"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="da54868e-6d51-42b2-a12e-61ff4f28fe35"
+            name="type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f4fac6a6-eed5-4b24-94df-2f34261649b5"
+            name="Activité"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3e62059b-46cc-4536-92df-724bbc307721"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5049423a-8d78-4f37-ace4-c12a0409d7e3"
+        name="Medecin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="210f6faf-1ed3-46ad-901b-226d58df6c23"
+            isDerived="false"
+            sourceEndRoleName="Medecin"
+            targetEndRoleName="CentreMedical"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="96b8b68d-8b1e-4025-8269-1546ff2a7e08"
+              LastKnownName="CentreMedical"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c04a60c0-6ba4-40cc-b8b2-50b74451e947"
+                  name="Medecin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="05012c6d-5e5e-4ed0-8238-5ed264187ca5"
+                      name="Lower"
+                      value="1.*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ca709a6b-0e01-4fee-a7b1-92fec6a57a3b"
+                      name="Upper"
+                      value="1.*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5880aab-3c36-43ff-bd7a-b8bb0df77546"
+                  name="CentreMedical"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6b77c325-212c-46d9-8815-142e19a20180"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c7b60d0d-56f2-4402-b23d-045137c84d70"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="adc1236e-0f18-44f3-a7d9-f9e85a166ed7"
+            isDerived="false"
+            sourceEndRoleName="Medecin"
+            targetEndRoleName="RDV"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8b59bcb5-a66d-47c7-9227-ad4c2c09ede5"
+              LastKnownName="RDV"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8f7c8a4-6653-4c8e-b8b0-1137e638f548"
+                  name="Medecin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="17a25bae-ba13-4f4f-ad47-fafe0008c80b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ea0b05fc-762e-4515-bd10-1f47066d42f4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c4c3d6a-4e95-4bd7-aded-4e2202a45b89"
+                  name="RDV"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6978fefc-964d-4ee6-91c9-1c1ca8ac71b1"
+                      name="Lower"
+                      value="1.*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="41e19898-cb70-4c81-b9db-32435efba685"
+                      name="Upper"
+                      value="1.*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="af8e30b6-f02e-44f4-8d48-c958344c2d1a"
+            name="CINMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cb319ecd-367c-42e4-bf4a-24b2f1c4163c"
+            name="NomMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0b075e59-2e17-49c0-8cf9-e0567bccb97e"
+            name="PrenomMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="716aaa9a-3c17-4e9c-aaf3-f9a13d98be9c"
+            name="AdresseMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="58714687-7de8-4737-89fe-ee326e96f1a5"
+            name="NumTelMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bd76ce5d-8e24-443f-a056-2ab1997b4388"
+            name="SexMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="674605ca-46d6-44db-a6e3-df9fbe0065f7"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4641e063-9d0a-4868-ba43-9fbd9db4d897"
+            name="SpecialiteMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d0e78430-8173-4e0a-b12f-11c7b469e554"
+            name="MatriculeMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d772bdba-9912-4d55-a91b-a59102252dbd"
+        name="Patient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="003c839c-1831-4018-bb48-2d78c3d1313f"
+            name="CINPat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c2158f43-8921-411e-b26b-26cbd3d79e6c"
+            name="NomPat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="116f157a-4755-4643-8849-68d2f61d4e61"
+            name="PrenomPat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2dddbfeb-d306-4504-8830-3d5646e9062d"
+            name="DateNaisPat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4ab38581-73ad-4d2b-984d-bfaf1d60bbe9"
+            name="SexPat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="130daf54-f847-41d0-aeb5-9446b087e3db"
+            name="NumTelPat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f4243a70-949e-472d-ae0d-6691d8ffe886"
+            name="AdressePat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3f1746a6-0812-469d-98eb-2be839e26c40"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eb609617-95fe-4750-a392-791c4b989b45"
+            name="Assurence"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8b59bcb5-a66d-47c7-9227-ad4c2c09ede5"
+        name="RDV"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4b682c9a-adc6-4619-9265-f2ad6f95ec58"
+            isDerived="false"
+            sourceEndRoleName="RDV"
+            targetEndRoleName="Patient"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d772bdba-9912-4d55-a91b-a59102252dbd"
+              LastKnownName="Patient"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4fb9f7ad-f7cd-46ab-8848-bb1739665046"
+                  name="RDV"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="74bfa301-cd8a-4cd1-9bf4-6e183c032b3f"
+                      name="Lower"
+                      value="1.*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="117a583e-9f3d-4124-b0dc-a2e8bac2881e"
+                      name="Upper"
+                      value="1.*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="baa312af-8bc3-45c5-9442-9b382f2aae1b"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4ad8794f-45ff-4b8f-87a1-64c16f69a7f0"
+            name="DateRDV"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d40fc68c-d24d-4d88-b04f-6a085f27b2a5"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d956a396-6688-46a5-8ce9-23bfccbd94d4"
+            name="CINPat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="795990d5-1876-4278-96d6-38e9e28296f8"
+            name="CINMed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="988a6968-1dce-444f-9082-370493e15518"
+            name="Etat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="568ca6cb-59ed-45d5-b7ef-958e80a6cad6"
+        name="Hopital"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3f6ce1cf-63e8-4a3d-911a-39b05a6b4e8b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="96b8b68d-8b1e-4025-8269-1546ff2a7e08"
+              LastKnownName="CentreMedical"
+              LastKnownLocation="GestionCabinets.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f6487f2e-f600-4501-82e6-2377ee0ff520"
+        name="Clinique"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d32b4bcf-6105-48a8-91ff-2c786a66d74d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="96b8b68d-8b1e-4025-8269-1546ff2a7e08"
+              LastKnownName="CentreMedical"
+              LastKnownLocation="GestionCabinets.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e29edf20-b775-4e82-94a7-f7e6ea7224d8"
+        name="LaboratoireMedical"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="cea373d1-687a-4bdc-bdff-1439e63b51ef"
+            isSubstitutable="false">
+            <classMoniker
+              Id="96b8b68d-8b1e-4025-8269-1546ff2a7e08"
+              LastKnownName="CentreMedical"
+              LastKnownLocation="GestionCabinets.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aaf41be5-fe3e-44cb-84f4-6e44ec8ebfe6"
+        name="Cabinet"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="74195ace-10c1-4fe7-883d-995b917cb9a6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="96b8b68d-8b1e-4025-8269-1546ff2a7e08"
+              LastKnownName="CentreMedical"
+              LastKnownLocation="GestionCabinets.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="56fae0e9-1336-4813-8da3-384f48cb6e4e"
+        name="sequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="b821a3b0-5752-46aa-8143-734b92d40c00"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e024d3a2-f036-4c10-b1cc-aaa024bfd7fc"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bdc98fd9-5023-4fe3-a547-174134bd4d99"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="79bcd5e4-5940-4b58-af13-5ae8d2a68d82"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="040dd0bd-cf10-49ab-941d-e04932b576e9"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bdc98fd9-5023-4fe3-a547-174134bd4d99"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="32aa433a-36d7-4a57-86a4-30e01b232b6e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ac9f005f-1ddf-4cf3-a734-59e36049e4a3"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="79bcd5e4-5940-4b58-af13-5ae8d2a68d82"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="040dd0bd-cf10-49ab-941d-e04932b576e9"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="df926c1b-d7f8-494f-bfe5-6724b5e6593b"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e024d3a2-f036-4c10-b1cc-aaa024bfd7fc"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0cd93040-51f6-4897-ba34-30c8e8e19151"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="7f2f1d84-0d55-4e79-96f8-e68e335b7627"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c13ab2cc-99d8-4724-902b-fb2011810a9d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5af2e36a-8029-4598-98ea-087053d4c044"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="794a6d4a-2754-4399-a7d5-7d2b612d2e77"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="264746fd-cc8e-451c-8cc2-24aa489edcf7"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5af2e36a-8029-4598-98ea-087053d4c044"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="68f11f43-a241-428b-903c-8f9b0c89ba89"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="794a6d4a-2754-4399-a7d5-7d2b612d2e77"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="60ca9e1d-e32a-4277-8127-489c395a82d3"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bd1906de-64f5-4cb6-8fa6-efbb9885d8af"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="264746fd-cc8e-451c-8cc2-24aa489edcf7"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c13ab2cc-99d8-4724-902b-fb2011810a9d"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7ac99ed3-a211-466a-acf4-dc49cdbc3ec0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="2c802fc0-4357-4416-ac2e-b6ef79ce5c50"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3bfa0db9-fd7a-4f25-aedc-37885a7f70c4"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="13b8cb66-af0a-47ed-84a6-00fecf5313ce"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ae2e1a8a-f729-4e70-9281-ceec4d32e147"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4a4e4d63-8e52-4815-a13e-6c9d82eef2f3"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="13b8cb66-af0a-47ed-84a6-00fecf5313ce"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5a80d925-c09e-42be-8233-fd13a6abb4e5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ae2e1a8a-f729-4e70-9281-ceec4d32e147"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="34213c35-c2e5-48d3-a3cb-5315f2385a6a"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4a4e4d63-8e52-4815-a13e-6c9d82eef2f3"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7b97f892-d7d2-4d41-aa89-df71032b6f3e"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3bfa0db9-fd7a-4f25-aedc-37885a7f70c4"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b6b5a3a5-b76d-4ccb-a39b-6bcf293eaba9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9040755e-5e12-45e9-8f1a-da528c01c55d"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="75180d63-cc77-40b2-a22c-9e3bd9e78ac3"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b8cc2380-8eb5-43c3-abb7-03b11a490b85"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8afb4a42-479e-4721-9d50-41b533a3cdee"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="aab87070-ae71-4bc6-b059-cfd4d8370434"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b8cc2380-8eb5-43c3-abb7-03b11a490b85"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3e42c7cd-8559-458f-84e6-1274caa6fd0c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8afb4a42-479e-4721-9d50-41b533a3cdee"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cca0aacb-3a10-405e-b830-5b93e74b2dbc"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6e91bfb3-ea19-4df0-99f2-57c095eb4dcf"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="aab87070-ae71-4bc6-b059-cfd4d8370434"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="75180d63-cc77-40b2-a22c-9e3bd9e78ac3"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9fface6e-b559-44ba-8d8c-8b170a87eb2f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5ca0ba19-184d-4aa7-bb5e-3f04f7701d79"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="97f78098-13e2-48fa-bc41-8aa6ad6da59a"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c5ca529c-f41b-477e-9922-3183a06bcfa8"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a8ec67db-d35a-4d05-96d7-6ad02cd47752"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c5ca529c-f41b-477e-9922-3183a06bcfa8"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="30cc758b-0427-4a7b-92f2-9f03727a79e3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0858b1ae-e3ce-49a9-be83-4de1ab1bdc69"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a8ec67db-d35a-4d05-96d7-6ad02cd47752"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="97f78098-13e2-48fa-bc41-8aa6ad6da59a"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4f12ea9f-47e0-4b33-a505-dd51c0010259"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="00e98215-b727-405c-ba5a-912aebdc3009"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d9aadef0-14ed-46ce-b99b-f51becf202de"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="221f4b7c-1800-485c-b370-613959922da7"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="12a8b850-1efa-4ea7-915a-407818364cff"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b7fee857-ed21-4c4c-b910-539d87753d5b"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="221f4b7c-1800-485c-b370-613959922da7"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4e9df024-e44c-4439-b7a4-ca5e2862c46e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d1d73538-7d83-4176-ba50-3bc5af97903d"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="12a8b850-1efa-4ea7-915a-407818364cff"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9317274c-45b5-4a9f-b892-623f6bc147a3"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b7fee857-ed21-4c4c-b910-539d87753d5b"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d9aadef0-14ed-46ce-b99b-f51becf202de"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6c5c2886-7981-4d0a-9e29-5c45817343c3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="212cdfd4-7184-4c9a-9386-c7792e8fe25d"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="41db8968-00d7-44bd-8797-cf541b3dcb3f"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="06498e54-52c7-4c42-9277-ed54acb184d4"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="92e23d8c-aaa8-4740-9184-95814212fff3"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e4d7d9dd-7f29-4371-9a89-6b2787d28dc6"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1539c7b0-61e7-4019-9256-6298bf77d8d0"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="120a8f15-f5a8-4244-b582-5b6d22a49f6f"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="06498e54-52c7-4c42-9277-ed54acb184d4"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d26a0ea1-9474-4c70-bee2-cfb5f661c89b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4ff71bca-79c3-486e-9945-8fab623961f8"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="92e23d8c-aaa8-4740-9184-95814212fff3"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="7de3f49c-69f2-49db-85d0-0c775d430703"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="cb752d03-2bc1-4995-b0e6-19606811b74b"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="75a6714f-6994-4507-a9c4-0409492219b4"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="28a347ee-e6d9-45c4-9cb1-b3b6fe76242c"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f6f7f818-af0a-42ba-9d09-a2eb1dbd3fd8"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="75a6714f-6994-4507-a9c4-0409492219b4"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2eea8e15-bdcf-4179-a772-6d9300963840"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="28a347ee-e6d9-45c4-9cb1-b3b6fe76242c"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e4d7d9dd-7f29-4371-9a89-6b2787d28dc6"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f6f7f818-af0a-42ba-9d09-a2eb1dbd3fd8"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1539c7b0-61e7-4019-9256-6298bf77d8d0"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="cb752d03-2bc1-4995-b0e6-19606811b74b"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b0714ff4-ed2a-4baf-bdad-19e2bb9b48e5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+                LastKnownName="Médecin"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e96cc135-ee35-4d4c-874b-ebcc91e1ebb5"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3194b092-0b63-4ff1-abda-f65758aaddba"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="GestionCabinets.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="837c2177-8bf6-4f1b-81aa-de7c2b59a1c0"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="GestionCabinets.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="483a6a37-0b4f-4666-9de1-9af67603d0cd"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="GestionCabinets.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="837c2177-8bf6-4f1b-81aa-de7c2b59a1c0"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="961a0a49-1396-4132-be10-8cf8c0edbbe7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="120a8f15-f5a8-4244-b582-5b6d22a49f6f"
+            name="MessageOccurrenceSpecification37">
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="483a6a37-0b4f-4666-9de1-9af67603d0cd"
+            name="MessageOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="41db8968-00d7-44bd-8797-cf541b3dcb3f"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6e03c71f-dbfb-4288-9236-7eb13891b644"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+                LastKnownName="Système"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3194b092-0b63-4ff1-abda-f65758aaddba"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a4e32063-dddb-4c68-bed6-243b33c3acec"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GestionCabinets.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="00141b92-6731-4be1-a198-9de73ab3bb26"
+            name="Médecin"
+            isActor="false"
+            lifelineDisplayName="Médecin">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ac9f005f-1ddf-4cf3-a734-59e36049e4a3"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="df926c1b-d7f8-494f-bfe5-6724b5e6593b"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="34213c35-c2e5-48d3-a3cb-5315f2385a6a"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7b97f892-d7d2-4d41-aa89-df71032b6f3e"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0858b1ae-e3ce-49a9-be83-4de1ab1bdc69"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="75a6714f-6994-4507-a9c4-0409492219b4"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cb752d03-2bc1-4995-b0e6-19606811b74b"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="GestionCabinets.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5c992d94-586b-4051-b59b-71dbec0f6e28"
+            name="Système"
+            isActor="false"
+            lifelineDisplayName="Système">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="bdc98fd9-5023-4fe3-a547-174134bd4d99"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e024d3a2-f036-4c10-b1cc-aaa024bfd7fc"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5af2e36a-8029-4598-98ea-087053d4c044"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c13ab2cc-99d8-4724-902b-fb2011810a9d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="13b8cb66-af0a-47ed-84a6-00fecf5313ce"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3bfa0db9-fd7a-4f25-aedc-37885a7f70c4"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cca0aacb-3a10-405e-b830-5b93e74b2dbc"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6e91bfb3-ea19-4df0-99f2-57c095eb4dcf"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c5ca529c-f41b-477e-9922-3183a06bcfa8"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="97f78098-13e2-48fa-bc41-8aa6ad6da59a"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="221f4b7c-1800-485c-b370-613959922da7"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d9aadef0-14ed-46ce-b99b-f51becf202de"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="06498e54-52c7-4c42-9277-ed54acb184d4"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="41db8968-00d7-44bd-8797-cf541b3dcb3f"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GestionCabinets.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2ac366e5-6466-449a-9bcf-c035bd97eb16"
+            name="Patient"
+            isActor="false"
+            lifelineDisplayName="Patient">
+            <represents>
+              <propertyMoniker
+                Id="10c6853b-b98c-4aad-9f41-964c9c11d2c2"
+                LastKnownLocation="GestionCabinets.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="60ca9e1d-e32a-4277-8127-489c395a82d3"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bd1906de-64f5-4cb6-8fa6-efbb9885d8af"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b8cc2380-8eb5-43c3-abb7-03b11a490b85"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="75180d63-cc77-40b2-a22c-9e3bd9e78ac3"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d1d73538-7d83-4176-ba50-3bc5af97903d"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9317274c-45b5-4a9f-b892-623f6bc147a3"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="GestionCabinets.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4ff71bca-79c3-486e-9945-8fab623961f8"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="837c2177-8bf6-4f1b-81aa-de7c2b59a1c0"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="GestionCabinets.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3194b092-0b63-4ff1-abda-f65758aaddba"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="GestionCabinets.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="236dee7a-bce1-4241-8d53-4f696e9e88f2"
+            name="Inscription"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ac9f005f-1ddf-4cf3-a734-59e36049e4a3"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="79bcd5e4-5940-4b58-af13-5ae8d2a68d82"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f91ab461-b68d-46a9-b0cb-a48c918b657c"
+            name="Valider Inscription"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="040dd0bd-cf10-49ab-941d-e04932b576e9"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="df926c1b-d7f8-494f-bfe5-6724b5e6593b"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f07a16e4-f694-4f49-8e31-6465a18f0ac8"
+            name="Inscription"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="60ca9e1d-e32a-4277-8127-489c395a82d3"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="794a6d4a-2754-4399-a7d5-7d2b612d2e77"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1369f36d-c9a3-4464-8048-0f99fdab00d5"
+            name="Valider Inscription"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="264746fd-cc8e-451c-8cc2-24aa489edcf7"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bd1906de-64f5-4cb6-8fa6-efbb9885d8af"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="34fb68fb-f370-4f89-aa95-93a3e6a875b9"
+            name="Connexion"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="34213c35-c2e5-48d3-a3cb-5315f2385a6a"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ae2e1a8a-f729-4e70-9281-ceec4d32e147"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3c138f73-c889-4fb0-a938-ecaa7eb46410"
+            name="Valider Connexion"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4a4e4d63-8e52-4815-a13e-6c9d82eef2f3"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7b97f892-d7d2-4d41-aa89-df71032b6f3e"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9121a81f-f927-4524-8d34-079a2efa287b"
+            name="Connexion"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cca0aacb-3a10-405e-b830-5b93e74b2dbc"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8afb4a42-479e-4721-9d50-41b533a3cdee"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a973ea70-1576-4a49-be6b-1751d38ac2aa"
+            name="Valider Connexion"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="aab87070-ae71-4bc6-b059-cfd4d8370434"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6e91bfb3-ea19-4df0-99f2-57c095eb4dcf"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c968962c-6f78-42dc-963c-c881140a3a71"
+            name="Ajouter liste des Rendez-vous"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0858b1ae-e3ce-49a9-be83-4de1ab1bdc69"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a8ec67db-d35a-4d05-96d7-6ad02cd47752"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2e803d79-37e2-4a49-81c6-2e3beb7338ee"
+            name="Chercher Medcine/cabinet"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d1d73538-7d83-4176-ba50-3bc5af97903d"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="12a8b850-1efa-4ea7-915a-407818364cff"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5b5348b7-54f5-453c-a59e-77645ebb7138"
+            name="Trouver Le Medcine/Cabinet"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b7fee857-ed21-4c4c-b910-539d87753d5b"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9317274c-45b5-4a9f-b892-623f6bc147a3"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d0889b92-3101-4121-b180-d8da5fb9be57"
+            name="Ajouter Rendez-vous"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4ff71bca-79c3-486e-9945-8fab623961f8"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="92e23d8c-aaa8-4740-9184-95814212fff3"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f6750b53-76d3-4f57-823f-56a1f466aab3"
+            name="Un patient demander un Rendez-vous"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e4d7d9dd-7f29-4371-9a89-6b2787d28dc6"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="28a347ee-e6d9-45c4-9cb1-b3b6fe76242c"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="37ddc77b-5dc8-4a37-a033-1fc5f237dd5d"
+            name="Accepter OU Non Rendez-vous"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f6f7f818-af0a-42ba-9d09-a2eb1dbd3fd8"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1539c7b0-61e7-4019-9256-6298bf77d8d0"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="22f6a541-bf58-485c-ab96-8c3c8f85ff3f"
+            name="Validation de Rendez-vous ou non"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="120a8f15-f5a8-4244-b582-5b6d22a49f6f"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="GestionCabinets.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="483a6a37-0b4f-4666-9de1-9af67603d0cd"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="GestionCabinets.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="10c6853b-b98c-4aad-9f41-964c9c11d2c2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="d772bdba-9912-4d55-a91b-a59102252dbd"
+                LastKnownName="Patient"
+                LastKnownLocation="GestionCabinets.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="68f11f43-a241-428b-903c-8f9b0c89ba89"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7ac99ed3-a211-466a-acf4-dc49cdbc3ec0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="32aa433a-36d7-4a57-86a4-30e01b232b6e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0cd93040-51f6-4897-ba34-30c8e8e19151"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5a80d925-c09e-42be-8233-fd13a6abb4e5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b6b5a3a5-b76d-4ccb-a39b-6bcf293eaba9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3e42c7cd-8559-458f-84e6-1274caa6fd0c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9fface6e-b559-44ba-8d8c-8b170a87eb2f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="30cc758b-0427-4a7b-92f2-9f03727a79e3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4f12ea9f-47e0-4b33-a505-dd51c0010259"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4e9df024-e44c-4439-b7a4-ca5e2862c46e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6c5c2886-7981-4d0a-9e29-5c45817343c3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d26a0ea1-9474-4c70-bee2-cfb5f661c89b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6e03c71f-dbfb-4288-9236-7eb13891b644"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2eea8e15-bdcf-4179-a772-6d9300963840"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b0714ff4-ed2a-4baf-bdad-19e2bb9b48e5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="961a0a49-1396-4132-be10-8cf8c0edbbe7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a4e32063-dddb-4c68-bed6-243b33c3acec"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d191b815-7b19-445f-9d5a-48008e3d8ee0"
+        name="Rechercher les Centres Médicaux"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="efbb395e-d98f-4190-a6c4-04530eda2c67"
+        name="Utilisateur"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="955eb4c1-036f-4700-8752-875d40634eb9"
+            isDerived="false"
+            sourceEndRoleName="Utilisateur"
+            targetEndRoleName="Rechercher les Centres Médicaux"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d191b815-7b19-445f-9d5a-48008e3d8ee0"
+              LastKnownName="Rechercher les Centres Médicaux"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6b1a2c7-152a-4968-a373-161f494a1871"
+                  name="Utilisateur"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="30ee6fcb-c42a-4126-b76b-d3533ce5a6ab"
+                  name="Rechercher les Centres Médicaux"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="91a4e8f5-b628-40e4-9897-15e4444aab58"
+            isDerived="false"
+            sourceEndRoleName="Utilisateur"
+            targetEndRoleName="Visualiser les Article du Blog"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="576443c5-9b51-4514-9ff2-e092ec234c4c"
+              LastKnownName="Visualiser les Article du Blog"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1333aa5a-4bb1-4702-9932-f31b143e1c73"
+                  name="Utilisateur"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2622904-00e2-4559-8fad-1320bf2943a8"
+                  name="Visualiser les Article du Blog"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ae38620a-3839-4e56-8245-954849e53abb"
+            isDerived="false"
+            sourceEndRoleName="Utilisateur"
+            targetEndRoleName="Création d'un compte"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b6b72d4c-b283-410b-8f13-d67dd5d69816"
+              LastKnownName="Création d'un compte"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="befb9c06-1a36-4eb5-8c21-aca77c1ea5ed"
+                  name="Utilisateur"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e479519f-1688-4ad1-b1cb-886e28253dea"
+                  name="Création d'un compte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fc107981-f63c-4010-8060-dc1e05991859"
+            isDerived="false"
+            sourceEndRoleName="Utilisateur"
+            targetEndRoleName="Connection au compte"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f284394f-294b-4028-a0d4-639ec95e2fe9"
+              LastKnownName="Connection au compte"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0c280c2-8a94-4b8f-b98e-afff38a08e5a"
+                  name="Utilisateur"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab034038-6c60-4218-90c0-2e08562136e0"
+                  name="Connection au compte"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="58377856-8763-40dc-919e-e6d041d32ae4"
+        name="Patient"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="ce93cd20-58da-48b4-b5dc-01f95cc13cb9"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="efbb395e-d98f-4190-a6c4-04530eda2c67"
+              LastKnownName="Utilisateur"
+              LastKnownLocation="GestionCabinets.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="ab5216ec-1181-49ee-85a0-68d547b30c0b"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Editer Rendez-vous"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="16283103-ae14-4efb-a427-9bd7004a3bfb"
+              LastKnownName="Editer Rendez-vous"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f73e4489-cdee-4c81-97c8-0b14f1660e9a"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="747f4d88-ad92-40f1-a8d1-36ead6787c92"
+                  name="Editer Rendez-vous"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e6a527ac-3167-4634-99dc-53e2c4e77bc9"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Editer un Message"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="10d1ea4b-49fd-4f28-8fac-4057015ff92b"
+              LastKnownName="Editer un Message"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16f3ad51-852f-474d-a865-5a498625e505"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e55c945d-418d-4669-bdfd-f8b62ab4500e"
+                  name="Editer un Message"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b66e6f0a-3a6c-49ce-a4dd-b4d905b005f3"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Intereagir dans le Blog"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="95b61208-8ed6-4325-9ac4-bbae29d59c9f"
+              LastKnownName="Intereagir dans le Blog"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e1f5282-77da-4d05-ac4e-fd3b5936b01b"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d57edeb4-226b-40c1-9351-d615d6dffb5f"
+                  name="Intereagir dans le Blog"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d4e091b8-fb79-41ae-80a8-8bacf10e429b"
+        name="Medcin"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="db8a34d7-6f2d-45ce-94c4-3b3937cba5bf"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="58377856-8763-40dc-919e-e6d041d32ae4"
+              LastKnownName="Patient"
+              LastKnownLocation="GestionCabinets.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="a9efd7b0-e517-406d-8b01-59d7fa388e84"
+            isDerived="false"
+            sourceEndRoleName="Medcin"
+            targetEndRoleName="Editer Centre Médical"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="62f6de1b-7fa5-4652-915f-58d55e88fcb5"
+              LastKnownName="Editer Centre Médical"
+              LastKnownLocation="GestionCabinets.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a43ed81d-8ea0-43e4-bbe6-3584a5066aa4"
+                  name="Medcin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0e08e67-c4ab-4b03-9282-5acf9a95f1f7"
+                  name="Editer Centre Médical"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="576443c5-9b51-4514-9ff2-e092ec234c4c"
+        name="Visualiser les Article du Blog"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b6b72d4c-b283-410b-8f13-d67dd5d69816"
+        name="Création d'un compte"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f284394f-294b-4028-a0d4-639ec95e2fe9"
+        name="Connection au compte"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="41379b8d-97da-4119-82f8-d68b50b96b0c">
+            <useCaseMoniker
+              Id="b6b72d4c-b283-410b-8f13-d67dd5d69816"
+              LastKnownName="Création d'un compte"
+              LastKnownLocation="GestionCabinets.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="16283103-ae14-4efb-a427-9bd7004a3bfb"
+        name="Editer Rendez-vous"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="d14a8e04-d94f-4994-87ae-d0bf69ddcccc">
+            <useCaseMoniker
+              Id="f284394f-294b-4028-a0d4-639ec95e2fe9"
+              LastKnownName="Connection au compte"
+              LastKnownLocation="GestionCabinets.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="10d1ea4b-49fd-4f28-8fac-4057015ff92b"
+        name="Editer un Message"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="c848e84e-8b37-47cf-b64a-6d900c744fa8">
+            <useCaseMoniker
+              Id="f284394f-294b-4028-a0d4-639ec95e2fe9"
+              LastKnownName="Connection au compte"
+              LastKnownLocation="GestionCabinets.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="62f6de1b-7fa5-4652-915f-58d55e88fcb5"
+        name="Editer Centre Médical"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="c3b21fc8-096c-4b7e-9707-9041b351bd31">
+            <useCaseMoniker
+              Id="f284394f-294b-4028-a0d4-639ec95e2fe9"
+              LastKnownName="Connection au compte"
+              LastKnownLocation="GestionCabinets.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="95b61208-8ed6-4325-9ac4-bbae29d59c9f"
+        name="Intereagir dans le Blog"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ee8a30af-ecbb-418d-a019-7fb342cc3a65">
+            <useCaseMoniker
+              Id="f284394f-294b-4028-a0d4-639ec95e2fe9"
+              LastKnownName="Connection au compte"
+              LastKnownLocation="GestionCabinets.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

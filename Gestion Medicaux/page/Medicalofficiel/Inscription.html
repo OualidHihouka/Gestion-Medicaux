@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    
+   <!-- end css  -->
+</head>
+<body class="body">
+    
+    <!-- nav -->
+    <nav class="navbar col-md navbar-expand-md bg-primary navbar-dark">
+        <a class="navbar-brand">Medical</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#cnav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="cnav" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                        <a href="index.html" class="nav-link"><i class="fa fa-home icon" aria-hidden="true"></i>Home </a>
+                </li>
+                <li class="nav-item" >
+                        <a id="services" class="nav-link" href="Services.html"><i class="fa fa-list-alt icon"></i>Services</a o>
+                </li>
+                <li class="nav-item">
+                        <a href="Blog.html" class="nav-link"><span class="lnr lnr-earth icon"></span>Blog</a>
+                </li>
+                <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link"><span class="lnr lnr-phone-handset icon"></span>Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="AboutUs.html" class="nav-link"><i class="fa fa-info-circle icon"></i>About Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item nav-cnx" style="margin: 5px 10px;">
+                    <a href="Login.html" class="btn btn-outline-light" role="button" style="width: 100%;">Connection</a>
+                </li>
+                <li class="nav-item nav-cnx" style="margin: 5px 10px;">
+                    <a href="Inscription.html" class="btn btn-outline-light" role="button" style="width: 100%;">Inscription</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav  -->
+
+
+    <!-- start body container  -->
+        <!-- multistep form -->
+    <div class="container">
+        <div class="justify-content-center c_form">
+            <div class="justify-content-center text-center" >
+                <img src="img/c2.jpg" class="rounded-circle  center-block" alt="profiel" width="auto">
+                <h2 class="text-center">Inscription</h2>
+            </div>
+            <form id="msform" class="form-group">
+                <div id="p1" class="mb-30">
+                    <div class="form-row mb-10">
+                      <div class="col">
+                        <input type="text" class="form-control" id="nom" placeholder="Enter Nom" name="nom">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Enter Prenom" name="prenom">
+                      </div>
+                    </div>
+
+                    <div class="form-row mb-10">
+                        <div class="col">
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="col">
+                          <input type="tel" class="form-control" placeholder="Enter tele" name="tele">
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-10">
+                        <div class="col">
+                          <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                        </div>
+                        <div class="col">
+                          <input type="password" class="form-control" placeholder="Enter confirm password" name="cnpassword">
+                        </div>
+                    </div>
+
+                    <div class="form-row justify-content-center mb-10">
+                        <div class="custom-control custom-radio custom-control-inline ">
+                            <input type="radio" class="custom-control-input" id="customRadio1" name="example1" value="Home">
+                            <label class="custom-control-label" for="customRadio1">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="customRadio2" name="example1" value="Female">
+                            <label class="custom-control-label" for="customRadio2">Female</label>
+                        </div>
+                    </div>  
+
+                    <div class="custom-control custom-switch well mb-10">
+                        <input type="checkbox" class="custom-control-input" id="switch1">
+                        <label class="custom-control-label" for="switch1" style="color:rgb(12, 12, 250)">I agree to terms and condition:</label>
+                        <div id="term-field">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut orci quam. Nam vel ligula et mi commodo tincidunt. Cras mi ex, mollis eu magna eu, iaculis dignissim sapien. Donec et arcu malesuada, molestie erat in, tempor quam.</p>
+                          </div>
+                    </div>
+                </div>
+
+                <div id="p2" class="mb-30">
+                    <input type="file" class="form-control-file mb-10">
+                    <div class="form-group">
+                        <div class="col">
+                            <input type="text" class="form-control mb-10" placeholder="Enter CIN" name="cin">
+                        </div>
+                        <div class="col">
+                          <input type="date" class="form-control mb-10" id="date" name="date">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control mb-10" placeholder="Enter adresse" name="adresse">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control mb-10" placeholder="Enter assurance" name="assurence">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row justify-content-center mb-10">
+                        <div class="custom-control custom-radio custom-control-inline ">
+                            <input type="radio" class="custom-control-input" id="customRadio3" name="example2" value="Patient">
+                            <label class="custom-control-label" for="customRadio3">Patient</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="customRadio4" name="example2" value="Medecin">
+                            <label class="custom-control-label" for="customRadio4">Medecin</label>
+                        </div>
+                    </div> 
+
+                    <div id="p3">
+                        <div class="form-group mb-30">
+                            <div class="col mb-15">
+                                <input type="text" class="form-control" placeholder="Enter nom de cabinet" name="nomcab">
+                            </div>
+                            <div class="col mb-10">
+                              <input type="tel" class="form-control" placeholder="Enter tel cab" name="tel cab">
+                            </div>
+                            <div class="col mb-10">
+                              <input type="text" class="form-control" placeholder="Enter votre matricule" name="matricule">
+                            </div>
+                            <div class="col mb-10">
+                                <input type="text" class="form-control" placeholder="Enter adresse de cabinet" name="addresscab">
+                            </div>
+                            <div class="col mb-10">
+                                <input type="text" class="form-control" placeholder="Enter specialite" name="specialite">
+                            </div>
+                            <div class="form-group mb-10">
+                                <select class="form-control" id="sel1" >
+                                    <option>Activité</option>
+                                    <option>Hopital</option>
+                                    <option>Clinique</option>
+                                    <option>Cabinet</option>
+                                    <option>Laboratoir Medical</option>
+                                </select>
+                            </div>
+                            <input type="file" class="form-row-file mb-10 ml-50">
+                            <input type="file" class="form-row-file mb-10">
+                            <input type="file" class="form-row-file mb-10">
+                            <textarea class="form-control" placeholder="Description" rows="5" id="Description"></textarea>
+                            <div class="form-group mb-10">
+                                <select class="form-control" id="sel2">
+                                    <option>Type</option>
+                                    <option>Public</option>
+                                    <option>Privé</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center mb-25">
+                    <button type="button" class="btn btn-primary " id="Next">Next</button>
+                    <button type="button" class="btn btn-primary " id="Previous">Previous</button>
+                    <button type="submit" class="btn btn-primary " id="inscrire1">Registre utilisateur</button>
+                    <button type="submit" class="btn btn-primary " id="inscrire2">Registre patient</button>
+                    <button type="submit" class="btn btn-primary " id="inscrire3">Registre Medecin</button>
+                    <div class="spinner-border text-primary"></div>
+                    <a href="Login.html" class="ml-30">I Have acount</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- end body container  -->
+    
+
+    
+        <!-- js  -->
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        
+        <!-- end js  -->
+</body>
+</html>

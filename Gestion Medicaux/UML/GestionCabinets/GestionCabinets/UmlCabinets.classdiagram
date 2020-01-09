@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="a9372427-1bc8-4972-b8b6-f3153cb98b6e" name="UmlCabinets" linkedPackageId="92badbdf-3b40-49a5-b5f6-6d0b4f8a73ad" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ed38a4ca-1f8f-4568-9a66-fb3ecfd4a630" name="CentreMedical" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="96b8b68d-8b1e-4025-8269-1546ff2a7e08" />
+        <ownedAttributesInternal>
+          <property Id="56867922-8e75-4fba-a240-9896ece2f597" name="NumCab" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5be421dc-613b-46ca-b7f1-dc898809440c" />
+          </property>
+          <property Id="a7fea284-750e-4a43-a6a0-833739d5abe5" name="NomCab" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8240c927-547e-4ce1-aa07-4e2a9a69931a" />
+          </property>
+          <property Id="c8ad54b5-dde9-4c6e-8915-fd1bc692bfe3" name="AdresseCab" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61d23966-37aa-46c3-b690-0c0ea424ed66" />
+          </property>
+          <property Id="c0490685-1a58-4d75-b123-01b8e3ebe434" name="CINMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6fa21584-a45a-4d88-9b99-0e3b564ba060" />
+          </property>
+          <property Id="65366940-e24c-4ae0-8436-ce653549fd30" name="NumTelCab" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72c629ab-4526-4805-8623-7cd3c8576749" />
+          </property>
+          <property Id="ed9bd9f7-97b5-4f38-8096-cf6da0b57c32" name="type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da54868e-6d51-42b2-a12e-61ff4f28fe35" />
+          </property>
+          <property Id="fe66c9b4-7448-4089-9f61-ddeb20d7a0c9" name="Activité" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4fac6a6-eed5-4b24-94df-2f34261649b5" />
+          </property>
+          <property Id="3ef0aa52-497d-4935-ba31-2a8b50e323ea" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3e62059b-46cc-4536-92df-724bbc307721" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2ba36ea4-541f-48e4-9825-b8bbd81fcf20" name="Medecin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5049423a-8d78-4f37-ace4-c12a0409d7e3" />
+        <targetEnds>
+          <association Id="b41e8993-374d-446f-a6b0-9b8c7829e154" isDerived="false" sourceEndRoleName="Medecin" targetEndRoleName="CentreMedical" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ed38a4ca-1f8f-4568-9a66-fb3ecfd4a630" LastKnownName="CentreMedical" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c48431d0-d7a4-4c56-bf5d-9380b9be58d4" name="Medecin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a6ce19b4-9a26-43d2-801d-9421923def74" name="Lower" value="1.*">
+                      <elementDefinition Id="05012c6d-5e5e-4ed0-8238-5ed264187ca5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a1afaa33-1d28-4733-b4bc-f9cb5320e277" name="Upper" value="1.*">
+                      <elementDefinition Id="ca709a6b-0e01-4fee-a7b1-92fec6a57a3b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c04a60c0-6ba4-40cc-b8b2-50b74451e947" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fa30afa-4770-4d69-8e54-a9eee65b290c" name="CentreMedical" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="0b9a934e-47bf-45b6-8f86-9b42d2c0cf6f" name="Lower" value="1">
+                      <elementDefinition Id="6b77c325-212c-46d9-8815-142e19a20180" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="37d8551c-ea84-4bf1-9bc2-0f9ecfa39906" name="Upper" value="1">
+                      <elementDefinition Id="c7b60d0d-56f2-4402-b23d-045137c84d70" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d5880aab-3c36-43ff-bd7a-b8bb0df77546" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="210f6faf-1ed3-46ad-901b-226d58df6c23" />
+          </association>
+          <association Id="897bfeeb-7b95-418a-bd5c-ff4a2a3de517" isDerived="false" sourceEndRoleName="Medecin" targetEndRoleName="RDV" isLeaf="false" isAbstract="false">
+            <classMoniker Id="74eef529-ce4b-4248-8fcd-ef76e900c9ac" LastKnownName="RDV" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e2d382a-1e5f-4573-995e-18e36cc2e031" name="Medecin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="ff9aae11-3bb0-432d-b93a-e094cfe89bd0" name="Lower" value="1">
+                      <elementDefinition Id="17a25bae-ba13-4f4f-ad47-fafe0008c80b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="393b4693-2ee7-413e-b5b3-e23d476006d4" name="Upper" value="1">
+                      <elementDefinition Id="ea0b05fc-762e-4515-bd10-1f47066d42f4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a8f7c8a4-6653-4c8e-b8b0-1137e638f548" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6be744a-5ffa-4d54-b221-656953c54b5e" name="RDV" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="bcc12b58-8911-4d8e-adf6-2a785a686c49" name="Lower" value="1.*">
+                      <elementDefinition Id="6978fefc-964d-4ee6-91c9-1c1ca8ac71b1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="dbc221b2-03ab-41ff-af2e-92dabb9a15b5" name="Upper" value="1.*">
+                      <elementDefinition Id="41e19898-cb70-4c81-b9db-32435efba685" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8c4c3d6a-4e95-4bd7-aded-4e2202a45b89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="adc1236e-0f18-44f3-a7d9-f9e85a166ed7" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="8987ef10-7e9f-4024-b7dc-051aa285049e" name="CINMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af8e30b6-f02e-44f4-8d48-c958344c2d1a" />
+          </property>
+          <property Id="b15b5144-a90f-4d7a-9626-b92716c8011b" name="NomMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cb319ecd-367c-42e4-bf4a-24b2f1c4163c" />
+          </property>
+          <property Id="34592dde-8629-4be5-a100-c25f21708cc9" name="PrenomMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0b075e59-2e17-49c0-8cf9-e0567bccb97e" />
+          </property>
+          <property Id="08ce0a60-32a2-49ce-9c4e-9380811268f7" name="AdresseMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="716aaa9a-3c17-4e9c-aaf3-f9a13d98be9c" />
+          </property>
+          <property Id="b9e4a807-0863-4fab-b214-5817ac8b0cb7" name="NumTelMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="58714687-7de8-4737-89fe-ee326e96f1a5" />
+          </property>
+          <property Id="11d0f7f3-2b7b-4fdd-9d46-2c19a58a491a" name="SexMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bd76ce5d-8e24-443f-a056-2ab1997b4388" />
+          </property>
+          <property Id="7a529e33-6263-4f0f-9bad-d774b760f45a" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="674605ca-46d6-44db-a6e3-df9fbe0065f7" />
+          </property>
+          <property Id="7b3b65ef-a0d2-45b9-8808-a1ea4f34fad7" name="SpecialiteMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4641e063-9d0a-4868-ba43-9fbd9db4d897" />
+          </property>
+          <property Id="361ea72c-2c27-4940-836f-be98fefd25bd" name="MatriculeMed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d0e78430-8173-4e0a-b12f-11c7b469e554" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1f44109e-f24c-4e84-ba89-050d6c3a8349" name="Patient" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d772bdba-9912-4d55-a91b-a59102252dbd" />
+        <ownedAttributesInternal>
+          <property Id="a4d152ef-287a-4572-9ae1-8f9af8febe3c" name="CINPat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="003c839c-1831-4018-bb48-2d78c3d1313f" />
+          </property>
+          <property Id="912431c4-6c50-47c0-b27c-9c8541c47f27" name="NomPat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c2158f43-8921-411e-b26b-26cbd3d79e6c" />
+          </property>
+          <property Id="f3d3b942-f016-4bce-9d94-e329efc42c38" name="PrenomPat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="116f157a-4755-4643-8849-68d2f61d4e61" />
+          </property>
+          <property Id="31f59016-3de0-4ccb-8a44-e11568502fef" name="DateNaisPat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2dddbfeb-d306-4504-8830-3d5646e9062d" />
+          </property>
+          <property Id="d1496d50-0578-4e5a-9d9a-57f474f7b0d2" name="SexPat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4ab38581-73ad-4d2b-984d-bfaf1d60bbe9" />
+          </property>
+          <property Id="98d09a94-91d8-4d53-b4f0-d2347abe5630" name="NumTelPat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="130daf54-f847-41d0-aeb5-9446b087e3db" />
+          </property>
+          <property Id="f601a2e5-7f15-407d-a579-ee32fa451ff8" name="AdressePat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4243a70-949e-472d-ae0d-6691d8ffe886" />
+          </property>
+          <property Id="d49333bd-38d2-451e-a763-5332b4898903" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f1746a6-0812-469d-98eb-2be839e26c40" />
+          </property>
+          <property Id="6d8763ca-6087-48d7-9ff6-079997614119" name="Assurence" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb609617-95fe-4750-a392-791c4b989b45" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="74eef529-ce4b-4248-8fcd-ef76e900c9ac" name="RDV" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8b59bcb5-a66d-47c7-9227-ad4c2c09ede5" />
+        <targetEnds>
+          <association Id="3bd179e9-b788-4351-842f-c70694f09e53" isDerived="false" sourceEndRoleName="RDV" targetEndRoleName="Patient" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1f44109e-f24c-4e84-ba89-050d6c3a8349" LastKnownName="Patient" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="978b7357-b149-41ea-8ba0-cdf2ba7cf06f" name="RDV" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="8a9ad8c9-e7c0-40e9-8f9f-e2ae3ee17073" name="Lower" value="1.*">
+                      <elementDefinition Id="74bfa301-cd8a-4cd1-9bf4-6e183c032b3f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="929719ac-6f5a-4a62-9561-d3eac6925aa7" name="Upper" value="1.*">
+                      <elementDefinition Id="117a583e-9f3d-4124-b0dc-a2e8bac2881e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="4fb9f7ad-f7cd-46ab-8848-bb1739665046" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd171de9-fa9b-4d7e-a7d7-6fcea9284c2d" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="baa312af-8bc3-45c5-9442-9b382f2aae1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4b682c9a-adc6-4619-9265-f2ad6f95ec58" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b4e64ea5-f188-45d8-ba61-35f79ad370ea" name="DateRDV" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4ad8794f-45ff-4b8f-87a1-64c16f69a7f0" />
+          </property>
+          <property Id="6b5cc548-c1f4-4c60-a5ef-b746e04df4a2" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d40fc68c-d24d-4d88-b04f-6a085f27b2a5" />
+          </property>
+          <property Id="3132287f-3155-468f-9d50-5c0058c9b41a" name="CINPat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d956a396-6688-46a5-8ce9-23bfccbd94d4" />
+          </property>
+          <property Id="42d48aa3-33d5-4293-a3cb-b059a45ae221" name="CINMed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="795990d5-1876-4278-96d6-38e9e28296f8" />
+          </property>
+          <property Id="1a133d7b-4067-489d-8903-99e4427a90fe" name="Etat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="988a6968-1dce-444f-9082-370493e15518" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e69afc7b-c5c8-4748-806f-eeeb22f325ca" name="Hopital" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="568ca6cb-59ed-45d5-b7ef-958e80a6cad6" />
+        <generalsInternal>
+          <generalization Id="af9f7c30-db01-4838-b24a-0cf4900c447d" isSubstitutable="false">
+            <classMoniker Id="ed38a4ca-1f8f-4568-9a66-fb3ecfd4a630" LastKnownName="CentreMedical" />
+            <elementDefinition Id="3f6ce1cf-63e8-4a3d-911a-39b05a6b4e8b" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8907ba10-0b1b-46f6-95e1-979b45657cc9" name="Clinique" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f6487f2e-f600-4501-82e6-2377ee0ff520" />
+        <generalsInternal>
+          <generalization Id="695a2770-88b7-431c-af0a-29c03a5d2f90" isSubstitutable="false">
+            <classMoniker Id="ed38a4ca-1f8f-4568-9a66-fb3ecfd4a630" LastKnownName="CentreMedical" />
+            <elementDefinition Id="d32b4bcf-6105-48a8-91ff-2c786a66d74d" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b3ed9720-62df-4061-8b63-909dc0a60d50" name="LaboratoireMedical" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e29edf20-b775-4e82-94a7-f7e6ea7224d8" />
+        <generalsInternal>
+          <generalization Id="26067def-1532-4668-bb22-b3927eb5ebd0" isSubstitutable="false">
+            <classMoniker Id="ed38a4ca-1f8f-4568-9a66-fb3ecfd4a630" LastKnownName="CentreMedical" />
+            <elementDefinition Id="cea373d1-687a-4bdc-bdff-1439e63b51ef" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8dc7e67-e926-465c-ab95-849922a3686e" name="Cabinet" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aaf41be5-fe3e-44cb-84f4-6e44ec8ebfe6" />
+        <generalsInternal>
+          <generalization Id="47bd6781-c084-44ce-9150-9d681b95ce11" isSubstitutable="false">
+            <classMoniker Id="ed38a4ca-1f8f-4568-9a66-fb3ecfd4a630" LastKnownName="CentreMedical" />
+            <elementDefinition Id="74195ace-10c1-4fe7-883d-995b917cb9a6" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="92badbdf-3b40-49a5-b5f6-6d0b4f8a73ad" name="GestionCabinets">
+    <elementDefinition Id="b66019a5-1711-49f9-88d3-861ebf49a028" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b627a6f3-75ef-401a-be6d-3dbc75c01ba9">
+        <profileInstance Id="890ff3bd-39ba-4224-8a42-117ed20212d0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f9666962-34c2-4c41-8ddd-eff67d75308f">
+        <profileInstance Id="2125ed7b-4252-4480-bba9-42dce4323afc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
